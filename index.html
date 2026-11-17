@@ -1,87 +1,397 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Joshua Roberto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joshua Roberto | Data Analyst & Business Intelligence Consultant</title>
+
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #263238;
+            background-color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            color: #19354d;
+        }
+
         button {
             margin: 5px;
-            padding: 10px 15px;
-            font-size: 16px;
+            padding: 12px 18px;
+            font-size: 15px;
             cursor: pointer;
+            background-color: #19354d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #32658a;
+        }
+
+        a {
+            color: #245e91;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #cccccc;
+            margin: 30px 0;
+        }
+
+        .project {
+            background-color: #f5f5f5;
+            border-left: 5px solid #8b0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .experience {
+            background-color: #f0f5fa;
+            border-left: 5px solid #19354d;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .skills {
+            color: #526777;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
+
     <!-- Profile Image -->
-    <img src="https://i.imgur.com/h3oeIas.png" 
-         alt="Joshua Roberto" 
-         style="width:350px; height:auto; border-radius: 8px;">
+
+    <img src="https://i.imgur.com/h3oeIas.png"
+         alt="Joshua Roberto"
+         style="width:350px; max-width:100%; height:auto; border-radius:8px;">
+
+    <!-- Introduction -->
 
     <h1>Hello and Welcome to my site!</h1>
+
     <h2>Bonjour et Bienvenue sur mon site!</h2>
 
-    <p>My name is Joshua B. Roberto and I am from Saskatchewan.</p>
-    <p>I'm a recent graduate with a Bachelor of Science in Computer Science and a Bachelor of Science in Statistics (with Distinction) 
-       from the University of Saskatchewan in Saskatoon, Canada.</p>
+    <h2>Joshua B. Roberto</h2>
 
-    <p>
-        I'm a dual Filipino and Canadian citizen, and I bring a multicultural perspective to both my technical and academic pursuits. 
-        Growing up with roots in both countries has shaped how I think, learn, and connect with others.
-    </p>
-
-    <p>Beyond my technical background, I have a strong interest in Religious Studies and culture — particularly Asian traditions and the philosophical and theological writings of Thomas Aquinas. I'm passionate about exploring not only different academic fields but also the rich diversity of world religions and how they shape human experience.</p>
-
-    <p>
-        I believe that blending analytical skills with cultural and spiritual perspectives can lead to more holistic understanding, 
-        both in life and in the work we create.
-    </p>
-
-    <h3>Below are some works of mine:</h3>
-
-    <!-- Navigation Buttons -->
-    <br><br>
-    <button onclick="window.open('https://drive.google.com/drive/folders/1LOCBRg65JylS-0SJHQZeb0vjtF2X8kns', '_blank')">Religion and Culture</button>
-    <button onclick="window.open('https://drive.google.com/drive/folders/1pD7PTNBtsTe-_JTB0TTxmJMxmtOTctfs', '_blank')">Applied Regression Analysis</button>
-    <button onclick="window.open('https://drive.google.com/drive/folders/1cTSP8tKjCBU4XX9luoC4jdggdaBxYLCF?usp=drive_link', '_blank')">Multivariate Analysis</button>
-     
-    <!-- Resume Link -->
-    <a href="https://drive.google.com/file/d/1P19XE9IcQ1ULni7Zi3y3NS10X1yoIsT2/view?usp=drive_link" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       style="text-decoration: none;">
-        <button style="margin: 5px; padding: 10px 15px; font-size: 16px; cursor: pointer;">
-            Download My Resume (PDF)
-        </button>
-    </a>
-    <br><br>
-
-    <!-- University Links -->
-    <a href="https://www.usask.ca/" target="_blank">Link to the University of Saskatchewan</a>
-    <br><br>
-
-    <a href="https://artsandscience.usask.ca/math/index.php" target="_blank">Mathematics and Statistics Department Link in The University of Saskatchewan</a>
-    <br><br>
-
-    <a href="https://www.cs.usask.ca/" target="_blank">Computer Science Department Link in The University of Saskatchewan</a>
-    <br><br>
-
-    <a href="https://stmcollege.ca/" target="_blank">St. Thomas More College in The University of Saskatchewan</a>
-    <br><br>
-
-    <a href="https://www.op.org/" target="_blank">The Order of Preachers (aka Dominicans)</a>
-    <br><br>
-    
-     <!-- Current Time Display -->
     <h3>
-  Current Time in Saskatchewan is: 
-  <span id="time-display" style="font-size: 18px; font-weight: bold;"></span>
-  </h3>
-    
+        Data Analyst Consultant | Business Intelligence |
+        Statistical Analytics
+    </h3>
 
-    <!-- JavaScript for Time -->
+    <p>
+        My name is Joshua B. Roberto, and I am based in
+        Saskatchewan, Canada.
+    </p>
+
+    <p>
+        I currently work as a Data Analyst Consultant –
+        Business Intelligence at
+        <a href="https://datagapanalytics.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            DataGap Analytics
+        </a>,
+        where I transform complex datasets into actionable insights,
+        develop interactive dashboards, automate reporting processes,
+        and support data-driven business decision-making.
+    </p>
+
+    <p>
+        I hold a Bachelor of Science in Computer Science and a
+        Bachelor of Science in Statistics (with Distinction)
+        from the University of Saskatchewan in Saskatoon, Canada.
+    </p>
+
+    <p>
+        My professional interests include business intelligence,
+        statistical modelling, data science, database management,
+        predictive analytics, and reporting automation.
+    </p>
+
+    <p>
+        I was born and raised in the Philippines before moving
+        to Canada. As a dual Filipino and Canadian citizen, I bring
+        a multicultural perspective to my professional and academic
+        pursuits.
+    </p>
+
+    <hr>
+
+    <!-- Professional Experience -->
+
+    <h2>Professional Experience</h2>
+
+    <div class="experience">
+
+        <h3>Data Analyst Consultant – Business Intelligence</h3>
+
+        <p>
+            <strong>DataGap Analytics | 2026 – Present</strong>
+        </p>
+
+        <p>
+            Supporting business intelligence and analytics
+            initiatives through dashboard development,
+            data integration, statistical analysis,
+            data validation, and reporting automation.
+        </p>
+
+        <ul>
+            <li>
+                Develop interactive dashboards and KPI reports
+                using Microsoft Power BI.
+            </li>
+
+            <li>
+                Extract, transform, and validate data using SQL,
+                Python, and Excel.
+            </li>
+
+            <li>
+                Translate business requirements into actionable
+                analytical insights.
+            </li>
+
+            <li>
+                Support reporting automation, process improvement,
+                and data quality initiatives.
+            </li>
+        </ul>
+
+        <button onclick="window.open(
+            'https://datagapanalytics.com/', '_blank')">
+            Visit DataGap Analytics
+        </button>
+
+    </div>
+
+    <hr>
+
+    <!-- Technical Skills -->
+
+    <h2>Technical Skills</h2>
+
+    <ul>
+        <li>
+            <strong>Business Intelligence:</strong>
+            Power BI, Tableau, DAX, Power Query
+        </li>
+
+        <li>
+            <strong>Programming:</strong>
+            Python, R, SQL, Java
+        </li>
+
+        <li>
+            <strong>Database Management:</strong>
+            MySQL, Microsoft SQL Server, Relational Data Modelling
+        </li>
+
+        <li>
+            <strong>Statistical Analytics:</strong>
+            Regression Analysis, Multivariate Analysis,
+            Hypothesis Testing, Time Series Forecasting
+        </li>
+
+        <li>
+            <strong>Data Engineering:</strong>
+            Databricks, Data Transformation, Data Validation
+        </li>
+
+        <li>
+            <strong>Microsoft Excel:</strong>
+            PivotTables, Advanced Formulas, Reporting Automation
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- Resident Evil Analytics Projects -->
+
+    <h2>Resident Evil – Analytics & Research Projects</h2>
+
+    <p>
+        Independent analytics projects inspired by the Resident Evil
+        universe, applying business intelligence, statistical modelling,
+        data visualization, and database management to simulated
+        biohazard incidents and outbreak scenarios.
+    </p>
+
+    <!-- Resident Evil 0 -->
+
+    <div class="project">
+
+        <h3>Resident Evil 0 – Biohazard Incident Analytics</h3>
+
+        <p>
+            An analytical case study exploring fictional biohazard
+            incidents, outbreak patterns, and risk assessment through
+            statistical analysis and interactive dashboards.
+        </p>
+
+        <p class="skills">
+            Tableau | R | MySQL | Statistical Analysis
+        </p>
+
+        <button onclick="window.open(
+            'https://public.tableau.com/shared/QKSPJMW7J?:display_count=n&:origin=viz_share_link',
+            '_blank')">
+            View Interactive Tableau Dashboard
+        </button>
+
+        <button onclick="window.open(
+            'https://drive.google.com/file/d/14asp7nRJZpLmQmJo6GLz7toPeuw8zTQY/view?usp=drive_link',
+            '_blank')">
+            View R Statistical Analysis
+        </button>
+
+        <p>
+            <small>
+                Independent educational project using fictional
+                and simulated data. Not affiliated with Capcom.
+            </small>
+        </p>
+
+    </div>
+
+    <hr>
+
+    <!-- Academic Projects -->
+
+    <h2>Academic & Statistical Research</h2>
+
+    <p>
+        A collection of academic research and statistical analyses
+        completed throughout my university studies.
+    </p>
+
+    <button onclick="window.open(
+        'https://drive.google.com/drive/folders/1pD7PTNBtsTe-_JTB0TTxmJMxmtOTctfs',
+        '_blank')">
+        Applied Regression Analysis
+    </button>
+
+    <button onclick="window.open(
+        'https://drive.google.com/drive/folders/1cTSP8tKjCBU4XX9luoC4jdggdaBxYLCF?usp=drive_link',
+        '_blank')">
+        Multivariate Analysis
+    </button>
+
+    <hr>
+
+    <!-- Personal Interests -->
+
+    <h2>Religion, Philosophy & Culture</h2>
+
+    <p>
+        Beyond my technical background, I have a strong interest
+        in Religious Studies and culture — particularly Asian
+        traditions and the philosophical and theological writings
+        of Thomas Aquinas.
+    </p>
+
+    <p>
+        I am passionate about exploring different academic fields
+        and the rich diversity of world religions, including how
+        they shape human experience.
+    </p>
+
+    <p>
+        I believe that blending analytical skills with cultural
+        and spiritual perspectives can lead to a more holistic
+        understanding, both in life and in the work we create.
+    </p>
+
+    <button onclick="window.open(
+        'https://drive.google.com/drive/folders/1LOCBRg65JylS-0SJHQZeb0vjtF2X8kns',
+        '_blank')">
+        View Religion and Culture Projects
+    </button>
+
+    <hr>
+
+    <!-- Resume and Professional Links -->
+
+    <h2>Professional Resume & Networking</h2>
+
+    <button onclick="window.open(
+        'https://drive.google.com/file/d/1P19XE9IcQ1ULni7Zi3y3NS10X1yoIsT2/view?usp=drive_link',
+        '_blank')">
+        Download My Resume (PDF)
+    </button>
+
+    <button onclick="window.open(
+        'https://www.linkedin.com/in/joshua-roberto-b91a6410b/',
+        '_blank')">
+        Connect with Me on LinkedIn
+    </button>
+
+    <button onclick="window.open(
+        'https://github.com/jbr690950',
+        '_blank')">
+        View My GitHub Profile
+    </button>
+
+    <hr>
+
+    <!-- University and Institutional Links -->
+
+    <h2>Academic & Institutional Links</h2>
+
+    <a href="https://www.usask.ca/" target="_blank">
+        University of Saskatchewan
+    </a>
+
+    <br><br>
+
+    <a href="https://artsandscience.usask.ca/math/index.php"
+       target="_blank">
+        Department of Mathematics and Statistics
+    </a>
+
+    <br><br>
+
+    <a href="https://www.cs.usask.ca/" target="_blank">
+        Department of Computer Science
+    </a>
+
+    <br><br>
+
+    <a href="https://stmcollege.ca/" target="_blank">
+        St. Thomas More College
+    </a>
+
+    <br><br>
+
+    <a href="https://www.op.org/" target="_blank">
+        The Order of Preachers (Dominicans)
+    </a>
+
+    <hr>
+
+    <!-- Saskatchewan Time Display -->
+
+    <h3>
+        Current Time in Saskatchewan:
+        <span id="time-display"
+              style="font-size:18px; font-weight:bold;">
+        </span>
+    </h3>
+
     <script>
         function updateTime() {
             const options = {
@@ -95,34 +405,52 @@
                 month: 'long',
                 day: 'numeric'
             };
-            const formatter = new Intl.DateTimeFormat([], options);
-            document.getElementById('time-display').textContent = formatter.format(new Date());
+
+            const formatter =
+                new Intl.DateTimeFormat([], options);
+
+            document.getElementById('time-display').textContent =
+                formatter.format(new Date());
         }
 
         setInterval(updateTime, 1000);
         updateTime();
     </script>
-    
-    
-  
-<!-- Weather Widget -->
-<a class="weatherwidget-io" href="https://forecast7.com/en/52d13n106d67/saskatoon/" data-label_1="SASKATOON" data-label_2="WEATHER" data-theme="pure">SASKATOON WEATHER</a>
 
-<script>
-!function(d,s,id){
-  var js,fjs=d.getElementsByTagName(s)[0];
-  if(!d.getElementById(id)){
-    js=d.createElement(s);
-    js.id=id;
-    js.src='https://weatherwidget.io/js/widget.min.js';
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-}(document,'script','weatherwidget-io-js');
-</script>
-  
-  
-    
+    <!-- Weather Widget -->
+
+    <a class="weatherwidget-io"
+       href="https://forecast7.com/en/52d13n106d67/saskatoon/"
+       data-label_1="SASKATOON"
+       data-label_2="WEATHER"
+       data-theme="pure">
+        SASKATOON WEATHER
+    </a>
+
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src='https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,'script','weatherwidget-io-js');
+    </script>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer style="text-align:center; color:#666;">
+        <p>
+            &copy; 2026 Joshua B. Roberto |
+            Data Analytics & Business Intelligence
+        </p>
+    </footer>
+
 </body>
 
 </html>
-
