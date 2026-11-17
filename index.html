@@ -23,7 +23,8 @@
             color: #19354d;
         }
 
-        button {
+        .button {
+            display: inline-block;
             margin: 5px;
             padding: 12px 18px;
             font-size: 15px;
@@ -32,9 +33,10 @@
             color: white;
             border: none;
             border-radius: 5px;
+            text-decoration: none;
         }
 
-        button:hover {
+        .button:hover {
             background-color: #32658a;
         }
 
@@ -68,7 +70,43 @@
             color: #526777;
             font-weight: bold;
         }
+
+        .student-resource {
+            background-color: #f0f7f2;
+            border-left: 5px solid #216b42;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .youtube-button {
+            background-color: #cc0000;
+        }
+
+        .youtube-button:hover {
+            background-color: #990000;
+        }
+
+        nav {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f5fa;
+            border-radius: 8px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            color: #666666;
+        }
     </style>
+
 </head>
 
 <body>
@@ -91,6 +129,17 @@
         Data Analyst Consultant | Business Intelligence |
         Statistical Analytics
     </h3>
+
+    <!-- Quick Navigation -->
+
+    <nav>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#projects">Analytics Projects</a>
+        <a href="#academic">Academic Research</a>
+        <a href="#student-resources">Student Resources</a>
+        <a href="#resume">Resume & Networking</a>
+    </nav>
 
     <p>
         My name is Joshua B. Roberto, and I am based in
@@ -124,172 +173,255 @@
 
     <p>
         I was born and raised in the Philippines before moving
-        to Canada. As a dual Filipino and Canadian citizen, I bring
-        a multicultural perspective to my professional and academic
-        pursuits.
+        to Canada. As a dual Filipino and Canadian citizen,
+        I bring a multicultural perspective to my professional
+        and academic pursuits.
     </p>
 
     <hr>
 
     <!-- Professional Experience -->
 
-    <h2>Professional Experience</h2>
+    <section id="experience">
 
-    <div class="experience">
+        <h2>Professional Experience</h2>
 
-        <h3>Data Analyst Consultant – Business Intelligence</h3>
+        <div class="experience">
 
-        <p>
-            <strong>DataGap Analytics | 2026 – Present</strong>
-        </p>
+            <h3>Data Analyst Consultant – Business Intelligence</h3>
 
-        <p>
-            Supporting business intelligence and analytics
-            initiatives through dashboard development,
-            data integration, statistical analysis,
-            data validation, and reporting automation.
-        </p>
+            <p>
+                <strong>DataGap Analytics | 2026 – Present</strong>
+            </p>
 
-        <ul>
-            <li>
-                Develop interactive dashboards and KPI reports
-                using Microsoft Power BI.
-            </li>
+            <p>
+                Supporting business intelligence and analytics
+                initiatives through dashboard development,
+                data integration, statistical analysis,
+                data validation, and reporting automation.
+            </p>
 
-            <li>
-                Extract, transform, and validate data using SQL,
-                Python, and Excel.
-            </li>
+            <ul>
+                <li>
+                    Develop interactive dashboards and KPI reports
+                    using Microsoft Power BI and DAX.
+                </li>
 
-            <li>
-                Translate business requirements into actionable
-                analytical insights.
-            </li>
+                <li>
+                    Extract, transform, and validate data using
+                    SQL, Python, and Microsoft Excel.
+                </li>
 
-            <li>
-                Support reporting automation, process improvement,
-                and data quality initiatives.
-            </li>
-        </ul>
+                <li>
+                    Translate business requirements into
+                    actionable analytical insights.
+                </li>
 
-        <button onclick="window.open(
-            'https://datagapanalytics.com/', '_blank')">
-            Visit DataGap Analytics
-        </button>
+                <li>
+                    Support reporting automation, process improvement,
+                    and data quality initiatives.
+                </li>
+            </ul>
 
-    </div>
+            <a class="button"
+               href="https://datagapanalytics.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit DataGap Analytics
+            </a>
+
+        </div>
+
+    </section>
 
     <hr>
 
     <!-- Technical Skills -->
 
-    <h2>Technical Skills</h2>
+    <section id="skills">
 
-    <ul>
-        <li>
-            <strong>Business Intelligence:</strong>
-            Power BI, Tableau, DAX, Power Query
-        </li>
+        <h2>Technical Skills</h2>
 
-        <li>
-            <strong>Programming:</strong>
-            Python, R, SQL, Java
-        </li>
+        <ul>
+            <li>
+                <strong>Business Intelligence:</strong>
+                Microsoft Power BI, Tableau,
+                Interactive Dashboards, KPI Reporting
+            </li>
 
-        <li>
-            <strong>Database Management:</strong>
-            MySQL, Microsoft SQL Server, Relational Data Modelling
-        </li>
+            <li>
+                <strong>Power BI Development:</strong>
+                DAX (Data Analysis Expressions), Power Query,
+                Data Modelling, Calculated Measures,
+                Star Schema Design
+            </li>
 
-        <li>
-            <strong>Statistical Analytics:</strong>
-            Regression Analysis, Multivariate Analysis,
-            Hypothesis Testing, Time Series Forecasting
-        </li>
+            <li>
+                <strong>Programming:</strong>
+                Python, R, SQL, Java
+            </li>
 
-        <li>
-            <strong>Data Engineering:</strong>
-            Databricks, Data Transformation, Data Validation
-        </li>
+            <li>
+                <strong>Database Management:</strong>
+                MySQL, Microsoft SQL Server,
+                Relational Data Modelling
+            </li>
 
-        <li>
-            <strong>Microsoft Excel:</strong>
-            PivotTables, Advanced Formulas, Reporting Automation
-        </li>
-    </ul>
+            <li>
+                <strong>Statistical Analytics:</strong>
+                Regression Analysis, Multivariate Analysis,
+                Hypothesis Testing, Time Series Forecasting
+            </li>
+
+            <li>
+                <strong>Data Engineering:</strong>
+                Databricks, Data Transformation,
+                ETL, Data Validation
+            </li>
+
+            <li>
+                <strong>Microsoft Excel:</strong>
+                PivotTables, XLOOKUP, Advanced Formulas,
+                Reporting Automation
+            </li>
+
+            <li>
+                <strong>Version Control:</strong>
+                Git and GitHub
+            </li>
+        </ul>
+
+    </section>
 
     <hr>
 
     <!-- Resident Evil Analytics Projects -->
 
-    <h2>Resident Evil – Analytics & Research Projects</h2>
+    <section id="projects">
 
-    <p>
-        Independent analytics projects inspired by the Resident Evil
-        universe, applying business intelligence, statistical modelling,
-        data visualization, and database management to simulated
-        biohazard incidents and outbreak scenarios.
-    </p>
-
-    <!-- Resident Evil 0 -->
-
-    <div class="project">
-
-        <h3>Resident Evil 0 – Biohazard Incident Analytics</h3>
+        <h2>Resident Evil – Analytics & Research Projects</h2>
 
         <p>
-            An analytical case study exploring fictional biohazard
-            incidents, outbreak patterns, and risk assessment through
-            statistical analysis and interactive dashboards.
+            Independent analytics projects inspired by the Resident Evil
+            universe, applying business intelligence, statistical
+            modelling, data visualization, and database management
+            to simulated biohazard incidents and outbreak scenarios.
         </p>
 
-        <p class="skills">
-            Tableau | R | MySQL | Statistical Analysis
-        </p>
+        <!-- Resident Evil 0 -->
 
-        <button onclick="window.open(
-            'https://public.tableau.com/shared/QKSPJMW7J?:display_count=n&:origin=viz_share_link',
-            '_blank')">
-            View Interactive Tableau Dashboard
-        </button>
+        <div class="project">
 
-        <button onclick="window.open(
-            'https://drive.google.com/file/d/14asp7nRJZpLmQmJo6GLz7toPeuw8zTQY/view?usp=drive_link',
-            '_blank')">
-            View R Statistical Analysis
-        </button>
+            <h3>Resident Evil 0 – Biohazard Incident Analytics</h3>
 
-        <p>
-            <small>
-                Independent educational project using fictional
-                and simulated data. Not affiliated with Capcom.
-            </small>
-        </p>
+            <p>
+                An analytical case study exploring fictional
+                biohazard incidents, outbreak patterns, and risk
+                assessment through statistical analysis and
+                interactive dashboards.
+            </p>
 
-    </div>
+            <p class="skills">
+                Tableau | R | MySQL | Statistical Analysis
+            </p>
+
+            <a class="button"
+               href="https://public.tableau.com/shared/QKSPJMW7J?:display_count=n&amp;:origin=viz_share_link"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Interactive Tableau Dashboard
+            </a>
+
+            <a class="button"
+               href="https://drive.google.com/file/d/14asp7nRJZpLmQmJo6GLz7toPeuw8zTQY/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer">
+                View R Statistical Analysis
+            </a>
+
+            <p>
+                <small>
+                    Independent educational project using fictional
+                    and simulated data. Not affiliated with Capcom.
+                </small>
+            </p>
+
+        </div>
+
+    </section>
 
     <hr>
 
-    <!-- Academic Projects -->
+    <!-- Academic Research -->
 
-    <h2>Academic & Statistical Research</h2>
+    <section id="academic">
 
-    <p>
-        A collection of academic research and statistical analyses
-        completed throughout my university studies.
-    </p>
+        <h2>Academic & Statistical Research</h2>
 
-    <button onclick="window.open(
-        'https://drive.google.com/drive/folders/1pD7PTNBtsTe-_JTB0TTxmJMxmtOTctfs',
-        '_blank')">
-        Applied Regression Analysis
-    </button>
+        <p>
+            A collection of academic research and statistical
+            analyses completed throughout my university studies.
+        </p>
 
-    <button onclick="window.open(
-        'https://drive.google.com/drive/folders/1cTSP8tKjCBU4XX9luoC4jdggdaBxYLCF?usp=drive_link',
-        '_blank')">
-        Multivariate Analysis
-    </button>
+        <a class="button"
+           href="https://drive.google.com/drive/folders/1pD7PTNBtsTe-_JTB0TTxmJMxmtOTctfs"
+           target="_blank"
+           rel="noopener noreferrer">
+            Applied Regression Analysis
+        </a>
+
+        <a class="button"
+           href="https://drive.google.com/drive/folders/1cTSP8tKjCBU4XX9luoC4jdggdaBxYLCF?usp=drive_link"
+           target="_blank"
+           rel="noopener noreferrer">
+            Multivariate Analysis
+        </a>
+
+    </section>
+
+    <hr>
+
+    <!-- Student Resources -->
+
+    <section id="student-resources">
+
+        <h2>Student Resources – Studying and Living in Saskatoon</h2>
+
+        <div class="student-resource">
+
+            <h3>It's Kay to Be Karen</h3>
+
+            <p>
+                Are you considering studying at the University
+                of Saskatchewan or planning to move to Saskatoon?
+            </p>
+
+            <p>
+                As a University of Saskatchewan graduate who
+                moved to Canada from the Philippines, I understand
+                the importance of finding helpful resources when
+                pursuing an education and beginning a new chapter
+                in a different country.
+            </p>
+
+            <p>
+                I encourage prospective university students,
+                international students, and newcomers to explore
+                my friend's YouTube channel, It's Kay to Be Karen,
+                for helpful perspectives on university education,
+                student life, and living in Saskatoon, Saskatchewan.
+            </p>
+
+            <a class="button youtube-button"
+               href="https://www.youtube.com/@itskaytobekaren"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit It's Kay to Be Karen – YouTube
+            </a>
+
+        </div>
+
+    </section>
 
     <hr>
 
@@ -316,35 +448,43 @@
         understanding, both in life and in the work we create.
     </p>
 
-    <button onclick="window.open(
-        'https://drive.google.com/drive/folders/1LOCBRg65JylS-0SJHQZeb0vjtF2X8kns',
-        '_blank')">
+    <a class="button"
+       href="https://drive.google.com/drive/folders/1LOCBRg65JylS-0SJHQZeb0vjtF2X8kns"
+       target="_blank"
+       rel="noopener noreferrer">
         View Religion and Culture Projects
-    </button>
+    </a>
 
     <hr>
 
     <!-- Resume and Professional Links -->
 
-    <h2>Professional Resume & Networking</h2>
+    <section id="resume">
 
-    <button onclick="window.open(
-        'https://drive.google.com/file/d/1P19XE9IcQ1ULni7Zi3y3NS10X1yoIsT2/view?usp=drive_link',
-        '_blank')">
-        Download My Resume (PDF)
-    </button>
+        <h2>Professional Resume & Networking</h2>
 
-    <button onclick="window.open(
-        'https://www.linkedin.com/in/joshua-roberto-b91a6410b/',
-        '_blank')">
-        Connect with Me on LinkedIn
-    </button>
+        <a class="button"
+           href="https://drive.google.com/file/d/1P19XE9IcQ1ULni7Zi3y3NS10X1yoIsT2/view?usp=drive_link"
+           target="_blank"
+           rel="noopener noreferrer">
+            Download My Resume (PDF)
+        </a>
 
-    <button onclick="window.open(
-        'https://github.com/jbr690950',
-        '_blank')">
-        View My GitHub Profile
-    </button>
+        <a class="button"
+           href="https://www.linkedin.com/in/joshua-roberto-b91a6410b/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Connect with Me on LinkedIn
+        </a>
+
+        <a class="button"
+           href="https://github.com/jbr690950"
+           target="_blank"
+           rel="noopener noreferrer">
+            View My GitHub Profile
+        </a>
+
+    </section>
 
     <hr>
 
@@ -352,32 +492,41 @@
 
     <h2>Academic & Institutional Links</h2>
 
-    <a href="https://www.usask.ca/" target="_blank">
+    <a href="https://www.usask.ca/"
+       target="_blank"
+       rel="noopener noreferrer">
         University of Saskatchewan
     </a>
 
     <br><br>
 
     <a href="https://artsandscience.usask.ca/math/index.php"
-       target="_blank">
+       target="_blank"
+       rel="noopener noreferrer">
         Department of Mathematics and Statistics
     </a>
 
     <br><br>
 
-    <a href="https://www.cs.usask.ca/" target="_blank">
+    <a href="https://www.cs.usask.ca/"
+       target="_blank"
+       rel="noopener noreferrer">
         Department of Computer Science
     </a>
 
     <br><br>
 
-    <a href="https://stmcollege.ca/" target="_blank">
+    <a href="https://stmcollege.ca/"
+       target="_blank"
+       rel="noopener noreferrer">
         St. Thomas More College
     </a>
 
     <br><br>
 
-    <a href="https://www.op.org/" target="_blank">
+    <a href="https://www.op.org/"
+       target="_blank"
+       rel="noopener noreferrer">
         The Order of Preachers (Dominicans)
     </a>
 
@@ -444,7 +593,7 @@
 
     <!-- Footer -->
 
-    <footer style="text-align:center; color:#666;">
+    <footer>
         <p>
             &copy; 2026 Joshua B. Roberto |
             Data Analytics & Business Intelligence
